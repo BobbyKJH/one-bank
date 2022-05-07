@@ -41,8 +41,6 @@ const container2 = document.querySelector(".container_2");
 const container3 = document.querySelector(".container_3");
 // 이체 화면 올리기
 function onTransfer() {
-  // e.preventDefault();
-  console.log(1);
   container2.style.marginTop = "-812px";
 }
 // 이체 화면 내리기
@@ -51,7 +49,6 @@ function Cancellation() {
 }
 
 function onSpending() {
-  console.log(3);
   container3.style.marginTop = "-1634px";
 }
 function Close() {
