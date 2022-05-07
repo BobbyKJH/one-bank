@@ -3,12 +3,35 @@ body {
   background-color: black;
   font-weight: 500;
 }
+li {
+  text-decoration: none;
+}
 .container {
   position: relative;
   background-color: #eeece5;
   overflow-y: hidden;
 
   margin: 10px auto;
+  width: 375px;
+  height: 812px;
+}
+.container_2 {
+  position: relative;
+  background-color: #fff;
+  overflow-y: hidden;
+  z-index: 4;
+  margin-top: 10px;
+  transition: 1s;
+  width: 375px;
+  height: 812px;
+}
+.container_3 {
+  position: relative;
+  background-color: #fff;
+  overflow-y: hidden;
+  z-index: 4;
+  margin-top: -10px;
+  transition: 1s;
   width: 375px;
   height: 812px;
 }

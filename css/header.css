@@ -1,11 +1,23 @@
 /* 시간 및 충전 wifi  */
 .time {
   display: flex;
+  /* position: fixed; */
+  /* top: 5px; */
   /* width: 100%; */
   height: 44px;
   margin-bottom: 12px;
 }
-.time > .clock {
+.time > .clock_1 {
+  position: absolute;
+  margin: 10px 300px 15px 21px;
+  font-size: 15px;
+}
+.time > .clock_2 {
+  position: absolute;
+  margin: 10px 300px 15px 21px;
+  font-size: 15px;
+}
+.time > .clock_3 {
   position: absolute;
   margin: 10px 300px 15px 21px;
   font-size: 15px;
@@ -37,6 +49,10 @@ header {
   height: 43px;
   margin: 0 21px 713px 27px;
   /* border: 1px solid black; */
+}
+/* 지출 관리, 이체 */
+.title {
+  font-size: 24px;
 }
 /* 생활비 */
 header > h2 {

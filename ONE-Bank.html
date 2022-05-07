@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/history.css" />
+    <link rel="stylesheet" href="./css/transfer.css" />
   </head>
   <body>
+    <!-- 1 -->
     <div class="container">
       <!-- header -->
       <div class="time">
@@ -24,7 +26,7 @@
         <img src="./image/Cellular Connection.png" alt="Connection" />
         <!-- wifi -->
         <img src="./image/Wifi.png" alt="wifi" />
-        <h3 class="clock"></h3>
+        <h3 class="clock_1"></h3>
         <!-- battery -->
         <img src="./image/Battery.png" alt="battery" />
       </div>
@@ -39,6 +41,8 @@
 
       <!-- 계좌 자세한 내용 -->
       <div class="history">
+        <button class="btn" onclick="onHistory()"></button>
+
         <ul class="list"></ul>
       </div>
 
@@ -48,7 +52,7 @@
           <div class="accountBox">
             <div class="accountNum">
               355-673877-78773
-              <a href="#">이체</a>
+              <a class="transfer" href="#" onclick="onTransfer()">이체</a>
             </div>
             <div class="accountStatus">
               <strong>
@@ -59,7 +63,11 @@
             <div class="accountGraph">
               <img src="./image/Rectangle_47.png" alt="background" />
               <a href="#">
-                <img src="./image/mdi_bar_chart.png" alt="" />
+                <img
+                  onclick="onSpending()"
+                  src="./image/mdi_bar_chart.png"
+                  alt="spending"
+                />
               </a>
             </div>
             <div class="accountMsg"></div>
@@ -78,9 +86,72 @@
         <button><img src="./image/Glyph_2.png" alt="" /></button>
         <button><img src="./image/Glyph.png" alt="" /></button>
       </footer>
+
+      <!-- 2 -->
+      <div class="container_2">
+        <!-- header -->
+        <div class="time">
+          <!-- connection -->
+          <img src="./image/Cellular Connection.png" alt="Connection" />
+          <!-- wifi -->
+          <img src="./image/Wifi.png" alt="wifi" />
+          <h3 class="clock_2"></h3>
+          <!-- battery -->
+          <img src="./image/Battery.png" alt="battery" />
+        </div>
+        <header class=".header">
+          <p class="close" onclick="Cancellation()">취소</p>
+          <h1 class="title">이체</h1>
+        </header>
+
+        <!-- 계좌 자세한 내용 -->
+
+        <!-- 계좌번호 -->
+        <main></main>
+
+        <!-- footer -->
+        <footer>
+          <button><img src="./image/mdi_home.png" alt="home" /></button>
+          <button><img src="./image/Group_28.png" alt="" /></button>
+          <button><img src="./image/Glyph_2.png" alt="" /></button>
+          <button><img src="./image/Glyph.png" alt="" /></button>
+        </footer>
+      </div>
+
+      <!-- 3 -->
+      <div class="container_3">
+        <!-- header -->
+        <div class="time">
+          <!-- connection -->
+          <img src="./image/Cellular Connection.png" alt="Connection" />
+          <!-- wifi -->
+          <img src="./image/Wifi.png" alt="wifi" />
+          <h3 class="clock_3"></h3>
+          <!-- battery -->
+          <img src="./image/Battery.png" alt="battery" />
+        </div>
+        <header>
+          <p class="close" onclick="Close()">닫기</p>
+          <h1 class="title">지출관리</h1>
+        </header>
+
+        <!-- 계좌 자세한 내용 -->
+
+        <!-- 계좌번호 -->
+        <main></main>
+
+        <!-- footer -->
+        <footer>
+          <button><img src="./image/mdi_home.png" alt="home" /></button>
+          <button><img src="./image/Group_28.png" alt="" /></button>
+          <button><img src="./image/Glyph_2.png" alt="" /></button>
+          <button><img src="./image/Glyph.png" alt="" /></button>
+        </footer>
+      </div>
     </div>
+
     <!-- 스크립트 -->
     <script src="./js/clock.js"></script>
-    <script src="./js/One-Bank.js"></script>
+    <script src="./js/history.js"></script>
   </body>
 </html>
