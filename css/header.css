@@ -57,7 +57,6 @@ header > div {
   top: 9.5px;
   bottom: 9.5px;
   left: 261px;
-  /* margin: 65.5px 21px 722.5px 288px; */
 }
 header > div > img:first-child {
   position: absolute;
@@ -72,13 +71,16 @@ header > div > img:last-child {
 
 /* footer */
 footer {
+  position: relative;
   display: flex;
   background-color: #00bdb2;
   margin-top: 692px;
   height: 76px;
+  z-index: 3;
 }
 footer > button {
   width: 25%;
+  z-index: 1px;
   background-color: transparent;
   border: none;
 }

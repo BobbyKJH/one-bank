@@ -29,3 +29,38 @@
   font-size: 14px;
   margin-left: 27.49px;
 }
+.accountStatus {
+  position: absolute;
+  text-align: center;
+  width: 279px;
+  margin-top: 51px;
+  font-size: 24px;
+}
+strong > span {
+  font-size: 14px;
+}
+.accountGraph > img:first-child {
+  position: absolute;
+  margin: 103px 45px 35px 32px;
+}
+.accountGraph > a {
+  position: absolute;
+  margin: 91px 14px 0 241px;
+}
+
+/* 대출 */
+.account > p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 24px;
+  font-size: 14px;
+}
+.account > p > span {
+  text-decoration: underline;
+  margin-left: 8px;
+}
+.account > p > span > a {
+  color: #000;
+}

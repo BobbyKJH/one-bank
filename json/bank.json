@@ -2,10 +2,234 @@
   "bankList": [
     {
       "date": "2021-05-01",
+      "income": "out",
+      "classify": "",
+      "history": "편의점",
+      "price": 12000
+    },
+
+    {
+      "date": "2021-05-01",
+      "income": "out",
+      "classify": "",
+      "history": "카페",
+      "price": 5400
+    },
+
+    {
+      "date": "2021-05-01",
       "income": "in",
       "classify": "",
       "history": "용돈",
       "price": 20000
+    },
+
+    {
+      "date": "2021-05-01",
+      "income": "out",
+      "classify": "",
+      "history": "편의점",
+      "price": 3400
+    },
+
+    {
+      "date": "2021-05-02",
+      "income": "out",
+      "classify": "",
+      "history": "카페",
+      "price": 8000
+    },
+
+    {
+      "date": "2021-05-02",
+      "income": "in",
+      "classify": "",
+      "history": "용돈",
+      "price": 20000
+    },
+
+    {
+      "date": "2021-05-02",
+      "income": "out",
+      "classify": "",
+      "history": "마트",
+      "price": 50000
+    },
+    {
+      "date": "2021-05-02",
+      "income": "out",
+      "classify": "",
+      "history": "편의점",
+      "price": 11000
+    },
+    {
+      "date": "2021-05-03",
+      "income": "in",
+      "classify": "shopping",
+      "history": "교보문고",
+      "price": 25000
+    },
+    {
+      "date": "2021-05-03",
+      "income": "in",
+      "classify": "eatout",
+      "history": "김밥천국",
+      "price": 12000
+    },
+    {
+      "date": "2021-05-03",
+      "income": "in",
+      "classify": "shopping",
+      "history": "이마트",
+      "price": 45000
+    },
+    {
+      "date": "2021-05-03",
+      "income": "in",
+      "classify": "shopping",
+      "history": "cgv",
+      "price": 13000
+    },
+    {
+      "date": "2021-05-04",
+      "income": "in",
+      "classify": "eatout",
+      "history": "VIPS",
+      "price": 100000
+    },
+    {
+      "date": "2021-05-04",
+      "income": "in",
+      "classify": "eatout",
+      "history": "쉑쉑버거",
+      "price": 12000
+    },
+    {
+      "date": "2021-05-04",
+      "income": "in",
+      "classify": "eatout",
+      "history": "메가 커피",
+      "price": 3300
+    },
+    {
+      "date": "2021-05-04",
+      "income": "in",
+      "classify": "shopping",
+      "history": "G마켓",
+      "price": 140000
+    },
+    {
+      "date": "2021-05-05",
+      "income": "out",
+      "classify": "eatout",
+      "history": "과일",
+      "price": 9900
+    },
+    {
+      "date": "2021-05-05",
+      "income": "out",
+      "classify": "shopping",
+      "history": "조카선물",
+      "price": 56000
+    },
+    {
+      "date": "2021-05-05",
+      "income": "out",
+      "classify": "eatout",
+      "history": "브렌치카페",
+      "price": 10000
+    },
+    {
+      "date": "2021-05-05",
+      "income": "out",
+      "classify": "",
+      "history": "CU편의점",
+      "price": 4000
+    },
+    {
+      "date": "2021-05-06",
+      "income": "out",
+      "classify": "shopping",
+      "history": "악세사리",
+      "price": 124500
+    },
+    {
+      "date": "2021-05-06",
+      "income": "out",
+      "classify": "shopping",
+      "history": "쿠팡",
+      "price": 8900
+    },
+    {
+      "date": "2021-05-07",
+      "income": "out",
+      "classify": "shopping",
+      "history": "어버이날 선물",
+      "price": 500000
+    },
+
+    {
+      "date": "2021-05-07",
+      "income": "out",
+      "classify": "eatout",
+      "history": "케이크",
+      "price": 20000
+    },
+
+    {
+      "date": "2021-05-07",
+      "income": "in",
+      "classify": "",
+      "history": "1일 아르바이트",
+      "price": 100000
+    },
+
+    {
+      "date": "2021-05-08",
+      "income": "out",
+      "classify": "eatout",
+      "history": "부모님과 식사",
+      "price": 80000
+    },
+
+    {
+      "date": "2021-05-08",
+      "income": "out",
+      "classify": "eatout",
+      "history": "카페",
+      "price": 55000
+    },
+
+    {
+      "date": "2021-05-08",
+      "income": "out",
+      "classify": "shopping",
+      "history": "옷 쇼핑",
+      "price": 120000
+    },
+
+    {
+      "date": "2021-05-09",
+      "income": "신한은행 캐시백",
+      "classify": "",
+      "history": "",
+      "price": 3800
+    },
+
+    {
+      "date": "2021-05-09",
+      "income": "out",
+      "classify": "shopping",
+      "history": "강아지 간식",
+      "price": 20000
+    },
+
+    {
+      "date": "2021-05-09",
+      "income": "out",
+      "classify": "eatout",
+      "history": "쌀국수",
+      "price": 15000
     }
   ]
 }
