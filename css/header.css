@@ -52,6 +52,7 @@ header {
 }
 /* 지출 관리, 이체 */
 .title {
+  color: #000;
   font-size: 24px;
 }
 /* 생활비 */

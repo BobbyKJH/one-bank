@@ -29,10 +29,10 @@ const btn = document.querySelector(".btn");
 const history = document.querySelector(".history");
 
 function onHistory() {
-  if (history.style.marginTop === "55px") {
+  if (history.style.marginTop === "45px") {
     history.style.marginTop = "309px";
   } else {
-    history.style.marginTop = "55px";
+    history.style.marginTop = "45px";
   }
 }
 

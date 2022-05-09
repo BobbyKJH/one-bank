@@ -1,0 +1,21 @@
+.plan {
+  position: fixed;
+  display: block;
+  margin: 0 30px 0 30px;
+  background-color: #f5f5f5;
+}
+/* 계획 */
+.swiper {
+  position: fixed;
+  overflow-x: scroll;
+  margin-top: 25px;
+  width: 315px;
+  height: 47px;
+  /* border: 1px solid black; */
+}
+.swiper-scrollbar {
+  display: none;
+}
+.swiper-pagination-bullets {
+  display: none;
+}

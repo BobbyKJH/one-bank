@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/history.css" />
     <link rel="stylesheet" href="./css/transfer.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- 1 -->
@@ -42,8 +49,31 @@
       <!-- 계좌 자세한 내용 -->
       <div class="history">
         <button class="btn" onclick="onHistory()"></button>
+        <!-- 계획 -->
+        <div class="plan">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        <ul class="list"></ul>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <!-- 자세한 계좌 이체 -->
+        <div class="historyList">
+          <ul class="list"></ul>
+        </div>
       </div>
 
       <!-- 계좌번호 -->
@@ -70,7 +100,7 @@
                 />
               </a>
             </div>
-            <div class="accountMsg"></div>
+            <div class="accountMsg">5일 동안 210,000원 남음</div>
           </div>
           <p>
             지금 낮은 이자로 생활대출을 신청하세요!
@@ -87,7 +117,7 @@
         <button><img src="./image/Glyph.png" alt="" /></button>
       </footer>
 
-      <!-- 2 -->
+      <!-- 이체 페이지 -->
       <div class="container_2">
         <!-- header -->
         <div class="time">
@@ -107,7 +137,9 @@
         <!-- 계좌 자세한 내용 -->
 
         <!-- 계좌번호 -->
-        <main></main>
+        <main class="subMain">
+          <button>직접 입력</button>
+        </main>
 
         <!-- footer -->
         <footer>
@@ -118,7 +150,7 @@
         </footer>
       </div>
 
-      <!-- 3 -->
+      <!-- 지출관리 페이지 -->
       <div class="container_3">
         <!-- header -->
         <div class="time">
@@ -138,7 +170,10 @@
         <!-- 계좌 자세한 내용 -->
 
         <!-- 계좌번호 -->
-        <main></main>
+        <main class="subMain">
+          <h2>기준 금액</h2>
+          <h3>5,000,000원</h3>
+        </main>
 
         <!-- footer -->
         <footer>
@@ -153,5 +188,6 @@
     <!-- 스크립트 -->
     <script src="./js/clock.js"></script>
     <script src="./js/history.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
