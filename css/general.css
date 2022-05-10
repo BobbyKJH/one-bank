@@ -1,11 +1,15 @@
 body {
+  display: flex;
   font-family: "Noto Sans KR", sans-serif;
-  background-color: black;
+  background-color: yellow;
   font-weight: 500;
+  /* height: 100vh; */
+  /* width: 100vw; */
 }
 li {
   text-decoration: none;
 }
+/* 메인 페이지 */
 .container {
   position: relative;
   background-color: #eeece5;
@@ -15,6 +19,7 @@ li {
   width: 375px;
   height: 812px;
 }
+/* 이체 페이지 */
 .container_2 {
   position: relative;
   background-color: #fff;
@@ -25,6 +30,7 @@ li {
   width: 375px;
   height: 812px;
 }
+/* 지출관리 페이지 */
 .container_3 {
   position: relative;
   background-color: #fff;

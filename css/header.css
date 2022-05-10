@@ -90,7 +90,7 @@ header > div > img:last-child {
 footer {
   position: relative;
   display: flex;
-  background-color: #00bdb2;
+  background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
   margin-top: 692px;
   height: 76px;
   z-index: 4;

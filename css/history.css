@@ -17,6 +17,8 @@
 }
 .historyList > .list > li {
   font-size: 30px;
+  text-decoration: none;
+  /* overflow: scroll; */
 }
 .history > button {
   position: fixed;

@@ -1,21 +1,62 @@
 .plan {
-  position: fixed;
-  display: block;
-  margin: 0 30px 0 30px;
   background-color: #f5f5f5;
-}
-/* 계획 */
-.swiper {
   position: fixed;
-  overflow-x: scroll;
-  margin-top: 25px;
-  width: 315px;
-  height: 47px;
-  /* border: 1px solid black; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 375px;
+  height: 70px;
 }
-.swiper-scrollbar {
+.swiper-container {
+  overflow: auto;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 10px;
+  text-align: left;
+}
+.swiper-container::-webkit-scrollbar {
   display: none;
 }
-.swiper-pagination-bullets {
-  display: none;
+
+.swiper-slide {
+  text-align: left;
+  background: #dadada;
+  border-radius: 6px;
+  padding: 10px 29px;
+}
+.swiper-slide:first-child {
+  margin-left: -90px;
+}
+
+.swiper-slide:last-child {
+  text-align: left;
+  background: none;
+  width: 50%;
+}
+/* 더하기 + */
+.swiper-slide > .circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 22.5px;
+  height: 22.5px;
+}
+.swiper-slide > span {
+  margin-left: 30px;
+  position: absolute;
+  /* font-size: 8px; */
+}
+.swiper-container-vertical > .swiper-pagination-bullets {
+  top: unset !important;
+  left: 0;
+}
+
+.swiper-container-vertical
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  display: inline-block !important;
+  margin: 6px 2px !important;
 }

@@ -50,29 +50,31 @@
       <div class="history">
         <button class="btn" onclick="onHistory()"></button>
         <!-- 계획 -->
+
+        <!-- 보여지는 영역 -->
         <div class="plan">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
+          <div class="swiper-container">
+            <!-- 보여지는 영역 -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
+              <!-- div class="swiper-slide" 를 추가하면된다 -->
               <div class="swiper-slide">Slide 1</div>
               <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">
+                <div class="circle">+</div>
+                <span>더하기</span>
+              </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- 페이징 버튼 처리 -->
           </div>
         </div>
+
         <!-- 자세한 계좌 이체 -->
         <div class="historyList">
-          <ul class="list"></ul>
+          <ul class="list">
+            <li class="today"></li>
+            <li class="yesterday"></li>
+            <li class="lastWeek"></li>
+          </ul>
         </div>
       </div>
 
@@ -92,6 +94,8 @@
             </div>
             <div class="accountGraph">
               <img src="./image/Rectangle_47.png" alt="background" />
+              <div class="yellowBar1"></div>
+              <div class="orangeBar1"></div>
               <a href="#">
                 <img
                   onclick="onSpending()"
@@ -137,8 +141,59 @@
         <!-- 계좌 자세한 내용 -->
 
         <!-- 계좌번호 -->
-        <main class="subMain">
+        <main class="subMain_2">
           <button>직접 입력</button>
+
+          <div class="bankAccount">
+            <div>
+              <img src="./image/accountNum/Ellipse 6.png" alt="" />
+              <div>
+                <h3>정을수</h3>
+                <h4>신한 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (1).png" alt="" />
+              <div>
+                <h3>신이현</h3>
+                <h4>국민 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (2).png" alt="" />
+              <div>
+                <h3>웅진 코웨이</h3>
+                <h4>국민 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (3).png" alt="" />
+              <div>
+                <h3>기강 슈퍼</h3>
+                <h4>하나 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (4).png" alt="" />
+              <div>
+                <h3>김민석</h3>
+                <h4>하나 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (5).png" alt="" />
+              <div>
+                <h3>기성훈</h3>
+                <h4>하나 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+          </div>
         </main>
 
         <!-- footer -->
@@ -173,6 +228,9 @@
         <main class="subMain">
           <h2>기준 금액</h2>
           <h3>5,000,000원</h3>
+          <div class="grayBar"></div>
+          <div class="yellowBar"></div>
+          <div class="orangeBar"></div>
         </main>
 
         <!-- footer -->
@@ -189,5 +247,6 @@
     <script src="./js/clock.js"></script>
     <script src="./js/history.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/api.js"></script>
   </body>
 </html>
