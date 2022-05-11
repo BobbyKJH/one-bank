@@ -1,0 +1,203 @@
+/* main page */
+
+/* main 박스 전체 */
+.account {
+  position: absolute;
+  width: 100%;
+  height: 254px;
+  margin-top: 43px;
+}
+/* 계좌 박스 */
+.accountBox {
+  margin: 0 auto;
+  margin-top: 33px;
+  width: 279px;
+  height: 155px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+/* 총 금액 */
+.accountBox > .accountNum {
+  position: absolute;
+  text-align: center;
+  color: #858585;
+  font-size: 14px;
+  width: 279px;
+  margin: 14px 0 120px 0;
+}
+.accountNum > a {
+  text-decoration: none;
+  position: absolute;
+  color: #000;
+  font-size: 14px;
+  margin-left: 27.49px;
+}
+.accountStatus {
+  position: absolute;
+  text-align: center;
+  width: 279px;
+  margin-top: 51px;
+  font-size: 24px;
+}
+/* 원 */
+strong > span {
+  font-size: 14px;
+}
+/* 그래프 */
+.accountGraph > img:first-child {
+  position: absolute;
+  margin: 103px 45px 35px 32px;
+}
+.accountGraph > .yellowBar1 {
+  position: absolute;
+  height: 6.5px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  width: 152px;
+  background-color: #ffdb4c;
+  margin: 103px 45px 35px 32px;
+}
+.accountGraph > .orangeBar1 {
+  position: absolute;
+  margin: 93px 45px 35px 183px;
+  width: 8px;
+  height: 28px;
+  background-color: #ff5f00;
+}
+.accountGraph > a {
+  position: absolute;
+  margin: 91px 14px 0 241px;
+}
+.accountBox > .accountMsg {
+  position: absolute;
+  text-align: center;
+  width: 279px;
+  font-size: 14px;
+  margin: 128px auto 6px auto;
+}
+
+/* 대출 */
+.account > p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 24px;
+  font-size: 14px;
+}
+.account > p > span {
+  text-decoration: underline;
+  margin-left: 8px;
+}
+.account > p > span > a {
+  color: #000;
+}
+
+/* 이체 페이지 css */
+.subMain {
+  position: absolute;
+  width: 375px;
+  height: 631px;
+  box-sizing: border-box;
+  margin-top: 49px;
+}
+
+/* 직접입력 */
+
+.subMain > h2 {
+  position: absolute;
+  font-size: 18px;
+  margin: 33px 249px 563px 29px;
+}
+.subMain > h3 {
+  position: absolute;
+  text-align: center;
+  color: #ff5f00;
+  font-size: 24px;
+  margin: 29px 20px 558px 206px;
+  width: 150px;
+}
+
+.subMain > .grayBar {
+  background-color: #c4c4c4;
+  border-radius: 3px;
+  width: 308px;
+  height: 9.18px;
+  margin: auto;
+  margin-top: 98px;
+}
+.subMain > .yellowBar {
+  position: absolute;
+  border-radius: 3px;
+  width: 220px;
+  height: 9px;
+  background-color: #ffdb4c;
+  margin-top: -9px;
+  margin-left: 34px;
+}
+.subMain > .orangeBar {
+  background-color: #ff5f00;
+  position: absolute;
+  margin-top: -18px;
+  margin-left: 250px;
+  width: 8px;
+  height: 28px;
+}
+/* 계좌 이체(번호) */
+.subMain_2 {
+  position: absolute;
+  width: 375px;
+  height: 631px;
+  box-sizing: border-box;
+  margin-top: 49px;
+}
+/* 직접입력 */
+.subMain_2 > button {
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #858585;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 317px;
+  height: 47px;
+  margin: 41px auto 543px auto;
+}
+.subMain_2 > .bankAccount {
+  height: 409px;
+  margin-top: -500px;
+  /* text-align: center; */
+}
+.bankAccount > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 317px;
+  height: 54px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+.bankAccount > div > div {
+  margin-left: 17px;
+  width: 239px;
+}
+.bankAccount > div > div > h3 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  display: block;
+}
+.bankAccount > div > div > h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+/* 즐겨찾기 */
+.bankAccount > div > .star {
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}

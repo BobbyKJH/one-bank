@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>One-Bank</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/history.css" />
+    <link rel="stylesheet" href="./css/transfer.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 1 -->
+    <div class="container">
+      <!-- header -->
+      <div class="time">
+        <!-- connection -->
+        <img src="./image/Cellular Connection.png" alt="Connection" />
+        <!-- wifi -->
+        <img src="./image/Wifi.png" alt="wifi" />
+        <h3 class="clock_1"></h3>
+        <!-- battery -->
+        <img src="./image/Battery.png" alt="battery" />
+      </div>
+      <header>
+        <img src="./image/아바타.png" alt="아바타" />
+        <h2>생활비</h2>
+        <div>
+          <img src="./image/간편결제아이콘.png" alt="" />
+          <img src="./image/검색아이콘.png" alt="" />
+        </div>
+      </header>
+
+      <!-- 계좌 자세한 내용 -->
+      <div class="history">
+        <button class="btn" onclick="onHistory()"></button>
+        <!-- 계획 -->
+
+        <!-- 보여지는 영역 -->
+        <div class="plan">
+          <div class="swiper-container">
+            <!-- 보여지는 영역 -->
+            <div class="swiper-wrapper">
+              <!-- div class="swiper-slide" 를 추가하면된다 -->
+              <div class="swiper-slide">
+                <span>여행가기</span>
+              </div>
+              <div class="swiper-slide">
+                <span>핸드폰 바꾸기</span>
+              </div>
+              <div class="swiper-slide">
+                <span>돈 모으기</span>
+              </div>
+            </div>
+            <!-- 페이징 버튼 처리 -->
+          </div>
+        </div>
+
+        <!-- 자세한 계좌 이체 -->
+        <div class="historyList">
+          <ul class="list">
+            <!-- 오늘 지출 -->
+            <p>오늘<span>35,000원 지출</span></p>
+            <div class="listBox">
+              <li class="today"></li>
+            </div>
+
+            <!-- 어제 지출 -->
+            <p>어제<span>818,630원 지출</span></p>
+            <div class="listBox">
+              <li class="yesterday"></li>
+            </div>
+
+            <!-- 2일전 지출 -->
+            <p>2일전<span>655,219원 지출</span></p>
+            <div class="listBox">
+              <li class="twoDay"></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 계좌번호 -->
+      <main>
+        <div class="account">
+          <div class="accountBox">
+            <div class="accountNum">
+              355-673877-78773
+              <a class="transfer" href="#" onclick="onTransfer()">이체</a>
+            </div>
+            <div class="accountStatus">
+              <strong>
+                1,240,000
+                <span>원</span>
+              </strong>
+            </div>
+            <div class="accountGraph">
+              <img src="./image/Rectangle_47.png" alt="background" />
+              <div class="yellowBar1"></div>
+              <div class="orangeBar1"></div>
+              <a href="#">
+                <img
+                  onclick="onSpending()"
+                  src="./image/mdi_bar_chart.png"
+                  alt="spending"
+                />
+              </a>
+            </div>
+            <div class="accountMsg">5일 동안 210,000원 남음</div>
+          </div>
+          <p>
+            지금 낮은 이자로 생활대출을 신청하세요!
+            <span><a href="#">Go</a></span>
+          </p>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <button><img src="./image/mdi_home.png" alt="home" /></button>
+        <button><img src="./image/Group_28.png" alt="" /></button>
+        <button><img src="./image/Glyph_2.png" alt="" /></button>
+        <button><img src="./image/Glyph.png" alt="" /></button>
+      </footer>
+
+      <!-- 이체 페이지 -->
+      <div class="container_2">
+        <!-- header -->
+        <div class="time">
+          <!-- connection -->
+          <img src="./image/Cellular Connection.png" alt="Connection" />
+          <!-- wifi -->
+          <img src="./image/Wifi.png" alt="wifi" />
+          <h3 class="clock_2"></h3>
+          <!-- battery -->
+          <img src="./image/Battery.png" alt="battery" />
+        </div>
+        <header class=".header">
+          <p class="close" onclick="Cancellation()">취소</p>
+          <h1 class="title">이체</h1>
+        </header>
+
+        <!-- 계좌 자세한 내용 -->
+
+        <!-- 계좌번호 -->
+        <main class="subMain_2">
+          <button>직접 입력</button>
+
+          <div class="bankAccount">
+            <div>
+              <img src="./image/accountNum/Ellipse 6.png" alt="" />
+              <div>
+                <h3>정을수</h3>
+                <h4>신한 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (1).png" alt="" />
+              <div>
+                <h3>신이현</h3>
+                <h4>국민 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (2).png" alt="" />
+              <div>
+                <h3>웅진 코웨이</h3>
+                <h4>국민 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (3).png" alt="" />
+              <div>
+                <h3>기강 슈퍼</h3>
+                <h4>하나 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (4).png" alt="" />
+              <div>
+                <h3>김민석</h3>
+                <h4>하나 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/accountNum/Ellipse 6 (5).png" alt="" />
+              <div>
+                <h3>기성훈</h3>
+                <h4>하나 112048393002</h4>
+              </div>
+              <img class="star" src="./image/star.png" alt="" />
+            </div>
+          </div>
+        </main>
+
+        <!-- footer -->
+        <footer>
+          <button><img src="./image/mdi_home_2.png" alt="home" /></button>
+          <button><img src="./image/Group_28.png" alt="" /></button>
+          <button><img src="./image/Glyph_2.png" alt="" /></button>
+          <button><img src="./image/Glyph.png" alt="" /></button>
+        </footer>
+      </div>
+
+      <!-- 지출관리 페이지 -->
+      <div class="container_3">
+        <!-- header -->
+        <div class="time">
+          <!-- connection -->
+          <img src="./image/Cellular Connection.png" alt="Connection" />
+          <!-- wifi -->
+          <img src="./image/Wifi.png" alt="wifi" />
+          <h3 class="clock_3"></h3>
+          <!-- battery -->
+          <img src="./image/Battery.png" alt="battery" />
+        </div>
+        <header>
+          <p class="close" onclick="Close()">닫기</p>
+          <h1 class="title">지출관리</h1>
+        </header>
+
+        <!-- 계좌 자세한 내용 -->
+
+        <!-- 계좌번호 -->
+        <main class="subMain">
+          <h2>기준 금액</h2>
+          <h3>5,000,000원</h3>
+          <div class="grayBar"></div>
+          <div class="yellowBar"></div>
+          <div class="orangeBar"></div>
+        </main>
+
+        <!-- footer -->
+        <footer>
+          <button><img src="./image/mdi_home_2.png" alt="home" /></button>
+          <button><img src="./image/Group_28.png" alt="" /></button>
+          <button><img src="./image/Glyph_2.png" alt="" /></button>
+          <button><img src="./image/Glyph.png" alt="" /></button>
+        </footer>
+      </div>
+    </div>
+
+    <!-- 스크립트 -->
+    <script src="./js/clock.js"></script>
+    <script src="./js/history.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/api.js"></script>
+  </body>
+</html>

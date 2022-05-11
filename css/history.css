@@ -1,0 +1,126 @@
+.history {
+  position: absolute;
+  width: 100%;
+  height: 637px;
+  transition: 0.8s;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 309px;
+  z-index: 2;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+/* scroll 안보이게 */
+.history::-webkit-scrollbar {
+  display: none;
+}
+.historyList > .list > li {
+  font-size: 30px;
+  text-decoration: none;
+  /* overflow: scroll; */
+}
+.history > button {
+  position: fixed;
+  border: none;
+  background-color: #c4c4c4;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+  width: 48px;
+  height: 6px;
+  margin-top: 5px;
+  margin-left: 163px;
+}
+
+.historyList > .list {
+  margin-top: 74px;
+  list-style: none;
+}
+/* 지출관리 margin-top736px */
+
+.list > .listBox {
+  width: 302px;
+  margin-bottom: 38px;
+}
+.listBox {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+/* 오늘 지출 금액 */
+.today > p {
+  display: inline-block;
+  margin: 0;
+  width: 149px;
+}
+.today > p:nth-child(2) {
+  text-align: right;
+}
+.today > li {
+  display: inline-block;
+  text-align: left;
+  width: 151px;
+  margin: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.today > ul {
+  display: inline-block;
+  text-align: right;
+  width: 151px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+/* 어제 지출 금액 */
+.yesterday > li {
+  display: inline-block;
+  text-align: left;
+  width: 151px;
+  margin: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.yesterday > ul {
+  display: inline-block;
+  text-align: right;
+  width: 151px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+/* 이틀전 지출 금액 */
+.twoDay > li {
+  display: inline-block;
+  text-align: left;
+  width: 151px;
+  margin: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.twoDay > ul {
+  display: inline-block;
+  text-align: right;
+  width: 151px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.list > p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  width: 302px;
+}
+.list > p > span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #b4b4b4;
+}
